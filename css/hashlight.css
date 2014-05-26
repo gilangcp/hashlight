@@ -1,0 +1,36 @@
+.hashlight-marker {
+	pointer-events: none;
+	overflow: auto;
+	position: absolute;
+	word-break: break-all;
+	visibility: hidden;
+}
+
+.hashlight-tag{
+	pointer-events : auto !important;
+	display: inline;
+	text-decoration: none;
+	visibility:visible !important;
+}
+
+.hashlight-autocomplete{
+	margin: 0;
+	padding: 0;
+	border : 1px solid #ccc;
+	position: absolute;
+	background-color: white;
+}
+
+.hashlight-autocomplete li{
+	width: 100%;
+	border : 1px solid #ccc;
+	list-style-type: none;
+	padding-top : 5px;
+	padding-bottom: 5px;
+	
+}
+
+.hashlight-autocomplete-active {
+	background-color: blue;
+	color: white;
+}
