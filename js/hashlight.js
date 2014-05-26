@@ -164,11 +164,11 @@ THE SOFTWARE.
 
 			for (i in tag) {
 				tag[i] = tag[i].replace(" ", "");
-				text = text.replace(new RegExp("\\" + tag[i] + "\\b", 'g'), "#" + i + "#");
+				text = text.replace(new RegExp("\\" + tag[i] + "\\b", 'g'), "__" +i+tag[i]+"__");
 			}
 
 			for (i in tag) {
-				text = text.replace(new RegExp("#" + i + "#", 'g'), options.tagElement(tag[i]));
+				text = text.replace(new RegExp("\\"+"__" +i+tag[i]+"__"+"\\b", 'g'),options.tagElement(tag[i]));
 			}
 
 			//Replace the object highlighter
